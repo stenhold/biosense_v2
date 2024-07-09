@@ -2,7 +2,7 @@ import React from 'react';
 
 const GridItem = ({ children, className }) => {
     return (
-        <div className={`p-4 ${className}`}>
+        <div className={`${className}`}>
             {children}
         </div>
     );

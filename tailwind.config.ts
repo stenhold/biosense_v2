@@ -15,7 +15,6 @@ const config: Config = {
       },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
       }
       ,
     },
