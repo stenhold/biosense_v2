@@ -24,7 +24,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ onMenuToggle }) => {
   return (
     <nav className="bg-gray-200 p-4 relative">
       <div className="container mx-auto flex justify-between items-center">
-        <div></div> {/* Empty div to align the button to the right */}
+        <Link href="/" legacyBehavior>
+          <a className="font-kanit text-gray-700">Biosense</a>
+        </Link>
         <button onClick={toggleMenu} className="text-gray-800 font-kanit focus:outline-none">
           ☰
         </button>
@@ -32,7 +34,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ onMenuToggle }) => {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-200 z-10 pt-2 pb-6">
           <div className="flex flex-col space-y-2 p-4 text-gray-600 font-light font-kanit">
-            <h1 className="text-3xl text-left text-gray-900 font-light font-kanit pb-6">Biosense</h1>
+            <Link href="/" legacyBehavior>
+              <a className="hover:text-gray-400">Home</a>
+            </Link>
             <Link href="/product-technology" legacyBehavior>
               <a className="hover:text-gray-400">Product/Technology</a>
             </Link>

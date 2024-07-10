@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from './components/Layout';
-import GridContainer from './components/Grid/GridContainer';
-import GridItem from './components/Grid/GridItem';
+import Layout from '../app/components/Layout';
+import GridContainer from '../app/components/Grid/GridContainer';
+import GridItem from '../app/components/Grid/GridItem';
 import Image from 'next/image';
 
 const HomePage = () => {
@@ -32,7 +32,7 @@ const HomePage = () => {
                     </GridItem>
                     <GridItem className="col-span-2 w-full h-full">
                         <Image
-                            src="/images/device_1.png"
+                            src="/images/device_in_hand.png"
                             alt="French Salon"
                             width={800}
                             height={600}
